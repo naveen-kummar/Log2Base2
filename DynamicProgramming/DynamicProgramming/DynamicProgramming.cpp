@@ -3,9 +3,15 @@
 
 #include <iostream>
 
+#include "LeastCommonSequence.h"
+#include "Knapsack_0_1.h"
+
+
 int main()
 {
     std::cout << "Hello World!\n";
+    LeastCommonSequence obj1{};
+    Knapsack_0_1 obj2{};
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

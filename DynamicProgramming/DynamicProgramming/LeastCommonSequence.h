@@ -2,9 +2,14 @@
 
 class LeastCommonSequence
 {
-    int lcs(int m, char* x, int n, char* y)
+    int lcs(const int m, const char* x, const int n, const char* y)
     {
-        int matrix[m + 1][n + 1];
+        int** matrix = new int* [m + 1];
+        for (int i = 0; i < m+1 + 1; i++)
+        {
+            matrix[i] = new int [n+1];
+        }
+
         int resumepos = 0;
         int result = 0;
 
